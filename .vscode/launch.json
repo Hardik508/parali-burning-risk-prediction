@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run demo (press F5)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/run_demo.py",
+      "cwd": "${workspaceFolder}/code",
+      "args": [
+        "--data",
+        "${workspaceFolder}/data/real_dataset_matched.npz",
+        "--model",
+        "${workspaceFolder}/results/proposed_model.pt",
+        "--out",
+        "${workspaceFolder}/demo_output"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Train (quick test, 2 epochs)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/train.py",
+      "cwd": "${workspaceFolder}/code",
+      "args": [
+        "--epochs",
+        "2"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Train (full, long)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/train.py",
+      "cwd": "${workspaceFolder}/code",
+      "args": [
+        "--epochs",
+        "30",
+        "--seeds",
+        "1"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Split,Samples,Accuracy,Precision,Recall,F1,Roc-Auc,Pr-Auc
+Training,8388,0.858,0.764,0.861,0.809,0.942,0.899
+Validation,1818,0.847,0.770,0.843,0.805,0.926,0.890
+Test,1917,0.878,0.775,0.807,0.791,0.947,0.888

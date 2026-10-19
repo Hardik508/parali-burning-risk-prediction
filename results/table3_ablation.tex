@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{What each input adds. The interval is a paired bootstrap on the test year.}
+\label{tab:table3_ablation}
+\begin{tabular}{lrrrrr}
+\hline
+Question & PR-AUC A & PR-AUC B & Gain (A-B) & 95\% CI of difference & Verdict \\
+\hline
+Weather (satellite+weather vs satellite only) & 0.878 & 0.807 & +0.071 & [+0.057, +0.105] & clear gain \\
+Harvest timing (hybrid + harvest vs hybrid) & 0.877 & 0.878 & -0.001 & [-0.020, -0.005] & clear loss \\
+Fire history (hybrid + fire history vs hybrid) & 0.889 & 0.878 & +0.011 & [-0.008, +0.019] & not distinguishable from zero \\
+Harvest timing on top of fire history & 0.888 & 0.889 & -0.001 & [-0.005, +0.008] & not distinguishable from zero \\
+Proposed vs hybrid without extras & 0.888 & 0.878 & +0.009 & [-0.005, +0.019] & not distinguishable from zero \\
+Deep hybrid + fire history vs Random Forest & 0.889 & 0.882 & +0.006 & [-0.004, +0.015] & not distinguishable from zero \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# generated outputs (re-created by RUN_DEMO.bat / train.py)
+demo_output/
+train_output/
+paper_results/
+_map_input.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

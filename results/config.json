@@ -1,0 +1,6 @@
+{
+  "split": "random",
+  "cell": 0.1,
+  "patience": 8,
+  "aug": "basic"
+}

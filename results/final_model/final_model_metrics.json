@@ -1,0 +1,178 @@
+{
+ "model": "results/proposed_model.pt",
+ "threshold": 0.5526,
+ "split": "all seasons pooled, 0.1-degree location-grouped 70/15/15",
+ "test_pr_auc_95ci": [
+  0.8663,
+  0.9082
+ ],
+ "sets": {
+  "train": {
+   "n": 8388,
+   "burns": 2930,
+   "acc": 0.8633,
+   "prec": 0.7785,
+   "rec": 0.8505,
+   "f1": 0.8129,
+   "spec": 0.8701,
+   "roc": 0.9433,
+   "pr_auc": 0.9013,
+   "cm": [
+    4749,
+    709,
+    438,
+    2492
+   ]
+  },
+  "val": {
+   "n": 1818,
+   "burns": 679,
+   "acc": 0.852,
+   "prec": 0.7887,
+   "rec": 0.8247,
+   "f1": 0.8063,
+   "spec": 0.8683,
+   "roc": 0.9262,
+   "pr_auc": 0.8891,
+   "cm": [
+    989,
+    150,
+    119,
+    560
+   ]
+  },
+  "test": {
+   "n": 1917,
+   "burns": 548,
+   "acc": 0.8811,
+   "prec": 0.7941,
+   "rec": 0.7883,
+   "f1": 0.7912,
+   "spec": 0.9182,
+   "roc": 0.9465,
+   "pr_auc": 0.8885,
+   "cm": [
+    1257,
+    112,
+    116,
+    432
+   ]
+  }
+ },
+ "confusion_matrix_note": "cm = [TN, FP, FN, TP]",
+ "topk": {
+  "5%": {
+   "sites": 96,
+   "burns_caught": 96,
+   "precision": 1.0,
+   "recall": 0.1752,
+   "lift": 3.498
+  },
+  "10%": {
+   "sites": 192,
+   "burns_caught": 188,
+   "precision": 0.9792,
+   "recall": 0.3431,
+   "lift": 3.425
+  },
+  "20%": {
+   "sites": 383,
+   "burns_caught": 341,
+   "precision": 0.8903,
+   "recall": 0.6223,
+   "lift": 3.115
+  },
+  "30%": {
+   "sites": 575,
+   "burns_caught": 445,
+   "precision": 0.7739,
+   "recall": 0.812,
+   "lift": 2.707
+  },
+  "40%": {
+   "sites": 767,
+   "burns_caught": 509,
+   "precision": 0.6636,
+   "recall": 0.9288,
+   "lift": 2.321
+  }
+ },
+ "permutation_importance_test": {
+  "satellite chip (CNN)": [
+   0.0572,
+   0.0032
+  ],
+  "hist_ring_5d": [
+   0.0473,
+   0.0141
+  ],
+  "hist_prev_1km": [
+   0.0385,
+   0.0048
+  ],
+  "ndmi": [
+   0.0232,
+   0.0046
+  ],
+  "precip": [
+   0.0222,
+   0.0011
+  ],
+  "wind": [
+   0.0129,
+   0.0021
+  ],
+  "hist_prev_5km": [
+   0.0096,
+   0.0018
+  ],
+  "ndvi": [
+   0.0087,
+   0.0017
+  ],
+  "soil": [
+   0.0073,
+   0.0014
+  ],
+  "rh": [
+   0.0064,
+   0.0021
+  ],
+  "temp_max": [
+   0.001,
+   0.0007
+  ],
+  "harvest_days_since": [
+   0.001,
+   0.0003
+  ],
+  "hist_now_20d": [
+   0.0009,
+   0.001
+  ],
+  "temp": [
+   -0.0002,
+   0.0009
+  ],
+  "ndvi_change_15d": [
+   -0.0003,
+   0.0005
+  ],
+  "ndvi_below_peak": [
+   -0.0003,
+   0.0002
+  ],
+  "vpd": [
+   -0.0005,
+   0.0005
+  ],
+  "harvest_drop": [
+   -0.0005,
+   0.0003
+  ],
+  "harvest_flag": [
+   -0.0008,
+   0.0005
+  ]
+ }
+}

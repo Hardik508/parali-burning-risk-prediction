@@ -1,0 +1,11 @@
+Model,PR-AUC (mean +- sd),PR-AUC 95% CI,ROC-AUC,Precision@20%,Recall@20%,Lift@20%,Runs
+Hybrid + fire history,0.889 +- 0.002,"[0.864, 0.907]",0.948,0.900,0.631,3.15,3
+Hybrid + harvest timing + fire history (proposed),0.888 +- 0.001,"[0.866, 0.908]",0.947,0.891,0.625,3.12,3
+"Random Forest (baseline, all inputs)",0.882 +- 0.000,"[0.858, 0.904]",0.946,0.896,0.628,3.13,1
+Hybrid CNN+LSTM (satellite + weather),0.878 +- 0.005,"[0.859, 0.904]",0.944,0.883,0.619,3.09,3
+Hybrid + harvest timing,0.877 +- 0.005,"[0.846, 0.893]",0.944,0.877,0.614,3.07,3
+Fire history only,0.856 +- 0.002,"[0.831, 0.881]",0.925,0.863,0.605,3.02,3
+LSTM only (satellite + weather series),0.848 +- 0.007,"[0.821, 0.869]",0.926,0.851,0.596,2.98,3
+"Hybrid, satellite only (no weather)",0.807 +- 0.005,"[0.765, 0.835]",0.917,0.824,0.577,2.88,3
+CNN only (satellite photo),0.807 +- 0.007,"[0.761, 0.835]",0.919,0.825,0.578,2.88,3
+Harvest timing only,0.553 +- 0.004,"[0.509, 0.597]",0.786,0.592,0.415,2.07,3

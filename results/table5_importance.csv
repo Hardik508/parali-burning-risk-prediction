@@ -1,0 +1,20 @@
+Input,Drop in PR-AUC when scrambled (mean +- sd)
+satellite photo (CNN),0.0555 +- 0.0035
+hist_ring_5d,0.0405 +- 0.0058
+hist_prev_1km,0.0404 +- 0.0010
+ndmi,0.0201 +- 0.0008
+precip,0.0190 +- 0.0026
+hist_prev_5km,0.0118 +- 0.0019
+wind,0.0106 +- 0.0025
+soil,0.0072 +- 0.0035
+ndvi,0.0061 +- 0.0007
+rh,0.0056 +- 0.0014
+temp,0.0023 +- 0.0012
+harvest_days_since,0.0011 +- 0.0006
+hist_now_20d,0.0009 +- 0.0003
+vpd,0.0007 +- 0.0009
+ndvi_change_15d,0.0002 +- 0.0001
+harvest_drop,0.0000 +- 0.0002
+harvest_flag,-0.0000 +- 0.0004
+temp_max,-0.0001 +- 0.0010
+ndvi_below_peak,-0.0003 +- 0.0001
